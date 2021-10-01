@@ -7,6 +7,7 @@ public class adventure {
         System.out.println("you will start from room 1 and search to find the end point.");
         Scanner s = new Scanner(System.in);
 
+        //The commands to do an action in the game
         String actions = s.nextLine();
 
         if (actions.equals("go north")) {
@@ -31,6 +32,7 @@ public class adventure {
             System.out.println("unknown action");
     }
 
+    //The help guide on how to play the game
     public static void helpGuide() {
         String [] help = {"type directions to go somewhere like 'north' or 'south'", "type 'look' to scout room", "type 'exit' to quit game"};
         System.out.println(help[0]);
