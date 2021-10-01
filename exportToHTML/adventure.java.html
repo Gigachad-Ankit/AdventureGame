@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>adventure.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+adventure.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.*</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">adventure {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Welcome to the Adventure Game!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;you will start from room 1 and search to find the end point.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Scanner s = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+
+        <span class="s3">//The commands to do an action in the game</span>
+        <span class="s1">String actions = s.nextLine()</span><span class="s0">;</span>
+
+        <span class="s0">if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;go north&quot;</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;you went north&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;go south&quot;</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;you went south&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;go east&quot;</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;you went east&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;go west&quot;</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;you went west&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;look&quot;</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;there are items and dirt in the room&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(actions.equals(</span><span class="s2">&quot;help&quot;</span><span class="s1">)) {</span>
+            <span class="s1">helpGuide()</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">else</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;unknown action&quot;</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s3">//The help guide on how to play the game</span>
+    <span class="s0">public static void </span><span class="s1">helpGuide() {</span>
+        <span class="s1">String [] help = {</span><span class="s2">&quot;type directions to go somewhere like 'north' or 'south'&quot;</span><span class="s0">, </span><span class="s2">&quot;type 'look' to scout room&quot;</span><span class="s0">, </span><span class="s2">&quot;type 'exit' to quit game&quot;</span><span class="s1">}</span><span class="s0">;</span>
+        <span class="s1">System.out.println(help[</span><span class="s4">0</span><span class="s1">])</span><span class="s0">;</span>
+        <span class="s1">System.out.println(help[</span><span class="s4">1</span><span class="s1">])</span><span class="s0">;</span>
+        <span class="s1">System.out.println(help[</span><span class="s4">2</span><span class="s1">])</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+
+    <span class="s1">}</span>
+
+
+
+
+
+</pre>
+</body>
+</html>
